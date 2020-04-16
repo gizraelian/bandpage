@@ -1,0 +1,614 @@
+body {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.showsFirstPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: grey;
+  background-position: center;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.925)), url("../Assets/Images/hanny-naibaho-388579-unsplash.png");
+  background-size: cover;
+  color: white;
+}
+
+.showsFirstPage__subHeader {
+  font-size: 4rem;
+  margin-left: 10vw;
+  margin-bottom: 5vh;
+  margin-top: 2vh;
+  font-weight: bolder;
+}
+
+.showsFirstPage__centralBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 2vh 5vw;
+  width: 80vw;
+  height: 100vh;
+}
+
+.showsFirstPage__centralBox--box {
+  text-align: center;
+  border-bottom: thin solid white;
+}
+
+.showsFirstPage__centralBox--box__leftContainer {
+  width: 30vw;
+  text-align: left;
+}
+
+.showsFirstPage__centralBox--box__centralContainer {
+  width: 30vw;
+  text-align: left;
+}
+
+.showsFirstPage__centralBox--box__rightButton {
+  font-size: 1rem;
+  border-radius: 4px;
+  color: white;
+  width: 198px;
+  height: 55px;
+  border: thin solid white;
+  background: rgba(255, 255, 255, 0.521);
+  margin-top: 3vh;
+  margin-left: 5vw;
+}
+
+.firstPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: grey;
+  background-image: url("../Assets/Images/ana-grave-156852-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.firstPage__header {
+  font-weight: bolder;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 5vh;
+}
+
+.firstPage__header--link {
+  margin-top: 3vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.firstPage__centralBox {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.firstPage__centralBox--date {
+  margin-bottom: 1vh;
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+.firstPage__centralBox--AlbumStatement {
+  margin-bottom: 8vh;
+  font-size: 3rem;
+}
+
+.firstPage__centralBox--ListenButton {
+  font-size: 1rem;
+  border-radius: 4px;
+  color: white;
+  width: 198px;
+  height: 55px;
+  border: thin solid white;
+  background: rgba(255, 255, 255, 0.521);
+}
+
+.secondPage {
+  color: black;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.secondPage__aboutBox {
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  margin-top: 2vh;
+  font-weight: bolder;
+}
+
+.secondPage__aboutBox--Header {
+  font-size: 4rem;
+}
+
+.secondPage__aboutBox--Article {
+  font-size: 1.2rem;
+  margin-bottom: 10vh;
+}
+
+.secondPage__articleBox {
+  font-size: 1.1rem;
+  margin-top: 25vh;
+  margin-left: 7vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+}
+
+.thirdPage {
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: black;
+  background-color: rgba(236, 236, 236, 0.911);
+  width: 100%;
+}
+
+.thirdPage__musicBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 330px;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 20vh;
+}
+
+.thirdPage__musicBox--header {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.thirdPage__articleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5vh 1vw;
+  max-width: 50vw;
+  min-width: 10vw;
+}
+
+.thirdPage__articleBox--headerBox {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.thirdPage__articleBox--articleText {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.galleryPage {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white;
+}
+
+.galleryPage__header {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 20vh;
+  margin-bottom: 8vh;
+  margin-left: 10vw;
+}
+
+.galleryPage__imageSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galleryPage__imageSection--imgBox1 {
+  background-image: url("../Assets/Images/Resized/ian-dooley-281855-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox2 {
+  background-image: url("../Assets/Images/Resized/ana-grave-156852-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox3 {
+  background-image: url("../Assets/Images/Resized/hanny-naibaho-388579-unsplash-bw-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox4 {
+  background-image: url("../Assets/Images/Resized/bryan-minear-315773-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox5 {
+  background-image: url("../Assets/Images/Resized/mike-giles-5655-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox6 {
+  background-image: url("../Assets/Images/Resized/melanie-van-leeuwen-83775-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox7 {
+  background-image: url("../Assets/Images/Resized/francisco-moreno-110533-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox8 {
+  background-image: url("../Assets/Images/Resized/felix-russell-saw-106848-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox9 {
+  background-image: url("../Assets/Images/Resized/paulette-wooten-223050-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox10 {
+  background-image: url("../Assets/Images/Resized/wesley-tingey-223059-unsplash (1)-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox11 {
+  background-image: url("../Assets/Images/Resized/abigail-keenan-83615-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.galleryPage__imageSection--imgBox12 {
+  background-image: url("../Assets/Images/Resized/ciprian-boiciuc-330413-unsplash-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 285px;
+  height: 285px;
+  margin: 10px;
+}
+
+.commentsPage__header {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 15vh;
+  margin-left: 10vw;
+}
+
+.commentsPage__inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10vw;
+  margin-bottom: 5vh;
+  width: 30vw;
+}
+
+.commentsPage__inputBox--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.commentsPage__inputBox--name__input {
+  width: 30vw;
+  height: 3vh;
+  font-size: 14px;
+  margin: 1vh 0vw;
+  border-radius: 4px;
+  border: 2px lightgray solid;
+}
+
+.commentsPage__inputBox--addComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 2vh;
+}
+
+.commentsPage__inputBox--addComment__input {
+  width: 30vw;
+  height: 3vh;
+  padding-bottom: 7vh;
+  font-size: 12px;
+  margin: 1vh 0vw;
+  border-radius: 4px;
+  border: 2px lightgray solid;
+}
+
+.commentsPage__inputBox--postCommentButton {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: black;
+  color: white;
+  background-color: black;
+  width: 20vw;
+  height: 6vh;
+  margin-top: 1vh;
+}
+
+.commentsPage__commentsListBox {
+  margin: 2vh 10vw;
+}
+
+.contactPage {
+  color: white;
+  background-color: #2b2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contactPage__header {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 15vh;
+  margin-left: 10vw;
+  width: 20vw;
+}
+
+.contactPage__centralBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 4vw;
+}
+
+.contactPage__centralBox--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactPage__centralBox--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactPage__centralBox--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactPage__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 4vw;
+}
+
+.contactPage__bottom--socialImgBox {
+  margin-left: 4vw;
+  margin-top: 6vh;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contactPage__bottom--socialImgBox__icons {
+  width: 2.2vw;
+  height: 4vh;
+}
+
+.contactPage__bottom--text {
+  margin-left: 7vw;
+  margin-top: 20vh;
+  margin-bottom: 3vh;
+}
+
+#idCommentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: solid thin grey;
+}
+
+#idCommentName {
+  font-weight: bold;
+}
+
+#idCommentText {
+  padding-bottom: 1rem;
+}
+
+#specialName {
+  font-weight: normal;
+}
+
+#showsSubContainer1 {
+  border-bottom: 1px solid white;
+}
+/*# sourceMappingURL=styles.css.map */

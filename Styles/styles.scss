@@ -1,0 +1,569 @@
+// ---------------SASS VARIABLE-----------------
+
+$thinWhiteBorder: thin solid white;
+
+
+// ---------------MIXIN-----------------
+
+@mixin imgSettings()
+{
+    background-position: center;
+    background-size: cover;
+    width: 285px;
+    height: 285px;
+    margin: 10px;
+}
+
+// ---------------SCSS with BEM----------------
+
+body 
+{
+margin: 0px;
+font-family: 'Poppins', sans-serif;
+}
+
+.showsFirstPage
+{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    background-position: center;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.925)), url("../Assets/Images/hanny-naibaho-388579-unsplash.png");
+    background-size: cover;
+    color: white;
+
+    &__subHeader
+    {
+        font-size: 4rem;
+        margin-left: 10vw;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+        font-weight: bolder;
+    }
+
+    &__centralBox
+    {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 2vh 5vw;
+        width: 80vw;
+        height: 100vh;
+        
+
+        &--box
+        {
+            text-align: center;
+            border-bottom: $thinWhiteBorder;
+
+            &__leftContainer
+            {
+                width: 30vw;
+                text-align: left;
+            }
+
+            &__centralContainer
+            {
+                width: 30vw;
+                text-align: left;
+            }
+
+            &__rightButton
+            {
+                font-size: 1rem;
+                border-radius: 4px;
+                color: white;
+                width: 198px;
+                height: 55px;
+                border: $thinWhiteBorder;
+                background: rgba(255, 255, 255, 0.521);
+                margin-top: 3vh;
+                margin-left: 5vw;
+            }
+        }
+    }
+}
+
+.firstPage
+{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    background-image: url("../Assets/Images/ana-grave-156852-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+    &__header
+    {
+        font-weight: bolder;
+        color:  white;
+        display: flex;
+        flex: wrap;
+        justify-content: space-between;
+        align-content: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 5vh;
+
+            &--link
+            {
+            margin-top: 3vh;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            }
+    }
+
+        &__centralBox
+        {
+        color:  white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+            &--date
+            {
+                margin-bottom: 1vh;
+                font-size: 4.5rem;
+                font-weight: bolder;
+            }
+
+            &--AlbumStatement
+            {
+                margin-bottom: 8vh;
+                font-size: 3rem;
+            }
+
+            &--ListenButton
+            {
+                font-size: 1rem;
+                border-radius: 4px;
+                color: white;
+                width: 198px;
+                height: 55px;
+                border: $thinWhiteBorder;
+                background: rgba(255, 255, 255, 0.521);
+            }
+        }
+}
+
+.secondPage
+{
+    color: black;
+    width: 100vw;
+    display: flex;
+    background-color: white;
+
+    &__aboutBox
+    {
+        margin-left: 10vw;
+        margin-bottom: 10vh;
+        margin-top: 2vh;
+        font-weight: bolder;
+
+        &--Header
+        {
+            font-size: 4rem;
+        }
+
+        &--Article
+        {
+            font-size: 1.2rem;
+            margin-bottom: 10vh;
+        }
+    }
+
+    &__articleBox
+    {
+        font-size: 1.1rem;
+
+        margin-top: 25vh;
+        margin-left: 7vw;
+        margin-right: 10vw;
+        margin-bottom: 10vh;
+    }
+}
+
+.thirdPage
+{
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    color: black;
+    background-color: rgba(236, 236, 236, 0.911);
+    width: 100%;
+
+    &__musicBox
+    {
+        display: flex;
+        flex-direction: column;
+        min-width: 330px;
+        margin-top: 2vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 20vh;
+
+        &--header
+        {
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+
+    }
+
+    &__articleBox
+    {
+
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 1vw;
+        max-width: 50vw;
+        min-width: 10vw;
+
+        &--headerBox
+        {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+
+        &--articleText
+        {
+
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+    }
+}
+
+.galleryPage
+{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: white;
+
+    &__header
+    {
+        font-size: 4rem;
+        font-weight: bolder;
+        margin-top: 20vh;
+        margin-bottom: 8vh;
+        margin-left: 10vw;
+    }
+
+    &__imageSection
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &--imgBox1
+        {
+
+            background-image: url("../Assets/Images/Resized/ian-dooley-281855-unsplash-resized.jpg");
+        @include imgSettings();
+        
+        }
+
+        &--imgBox2
+        {
+
+            background-image: url("../Assets/Images/Resized/ana-grave-156852-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox3
+        {
+
+            background-image: url("../Assets/Images/Resized/hanny-naibaho-388579-unsplash-bw-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox4
+        {
+
+            background-image: url("../Assets/Images/Resized/bryan-minear-315773-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox5
+        {
+
+            background-image: url("../Assets/Images/Resized/mike-giles-5655-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox6
+        {
+
+            background-image: url("../Assets/Images/Resized/melanie-van-leeuwen-83775-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox7
+        {
+
+            background-image: url("../Assets/Images/Resized/francisco-moreno-110533-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox8
+        {
+
+            background-image: url("../Assets/Images/Resized/felix-russell-saw-106848-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox9
+        {
+
+            background-image: url("../Assets/Images/Resized/paulette-wooten-223050-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox10
+        {
+
+            background-image: url("../Assets/Images/Resized/wesley-tingey-223059-unsplash (1)-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox11
+        {
+
+            background-image: url("../Assets/Images/Resized/abigail-keenan-83615-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+
+        &--imgBox12
+        {
+
+            background-image: url("../Assets/Images/Resized/ciprian-boiciuc-330413-unsplash-resized.jpg");
+        @include imgSettings();
+        }
+    }
+}
+
+.commentsPage
+{
+
+    &__header
+    {
+        font-size: 4rem;
+        font-weight: bolder;
+        margin-top: 15vh;
+        margin-left: 10vw;
+    }
+
+    &__inputBox
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        margin-bottom: 5vh;
+        width: 30vw;
+        
+
+        &--name
+        {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            font-weight: bolder;
+
+            &__input
+            {
+                width: 30vw; 
+                height: 3vh;
+                font-size: 14px;
+                margin: 1vh 0vw;
+                border-radius: 4px;
+                border: 2px lightgray solid;
+
+            }
+        }
+
+        &--addComment
+        {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            margin-top: 2vh;
+
+
+            &__input
+            {
+                width: 30vw; 
+                height: 3vh;
+                padding-bottom: 7vh;
+                font-size: 12px;
+                margin: 1vh 0vw;
+                border-radius: 4px;
+                border: 2px lightgray solid;
+            }
+        }
+
+        &--postCommentButton
+        {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 4px;
+            border: black;
+            color: white;
+            background-color: black;
+            width: 20vw;
+            height: 6vh;
+            margin-top: 1vh;
+
+
+        }
+    }
+
+    &__commentsListBox
+    {
+        margin: 2vh 10vw;
+        
+    }
+}
+
+.contactPage
+{
+    color: white;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__header
+    {
+        font-size: 4rem;
+        font-weight: bolder;
+        margin-top: 15vh;
+        margin-left: 10vw;
+        width: 20vw;
+
+    }
+
+    &__centralBox
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 4vw;
+
+        &--left
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__boldText
+            {
+            }
+
+            &__text
+            {
+            }
+        }
+
+        &--center
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__boldText
+            {
+            }
+
+            &__text
+            {      
+            }
+        }
+
+        &--right
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__boldText
+            {
+            }
+
+            &__text
+            {
+            }
+        }
+        }
+    &__bottom
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 4vw;
+
+        &--socialImgBox
+        {
+            margin-left: 4vw;
+            margin-top: 6vh;
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+
+            &__icons
+            {
+                width: 2.2vw;
+                height: 4vh;
+            }
+        }
+
+        &--text
+        {
+            margin-left: 7vw;
+            margin-top: 20vh;
+            margin-bottom: 3vh;
+        }
+    }
+}
+
+#idCommentContainer
+{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid thin grey; 
+}
+
+#idCommentName
+{
+    font-weight: bold;
+}
+
+#idCommentText
+{
+    padding-bottom: 1rem;
+}
+
+#specialName
+{
+    font-weight: normal;
+}
+
+#showsSubContainer1
+{
+    border-bottom: 1px solid white;
+}
